@@ -4,15 +4,15 @@ import { Container } from "@mui/system";
 import Navbar from "./Components/Navbar";
 import Result from "./Components/Result";
 import SliderSelect from "./Components/SliderSelect";
-import TenureSelect from "./Components/TenureSelect";
+import RepaymentTime from "./Components/RepaymentSelect";
 
 function App() {
 
   const [data, setData] = useState({
-    homeValue: 3000,
-    downPayment: 3000 * 0.2,
-    loanAmount: 3000 * 0.8,
-    loanTerm: 5,
+    homeValue: 10000,
+    downPayment: 10000 * 0.2,
+    loanAmount: 10000 * 0.8,
+    loanTerm: 3,
     interestRate: 5,
   })
 
@@ -27,7 +27,7 @@ function App() {
         <SliderSelect data={data} setData={setData}/>
 
         {/* Component to select the tenure of the loan. */}
-        <TenureSelect data={data} setData={setData}/>
+        <RepaymentTime data={data} setData={setData}/>
 
         </Grid>
         <Grid item xs={12} md={6}>

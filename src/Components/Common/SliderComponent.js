@@ -15,9 +15,10 @@ const SliderComponent = ({
     steps
   }) => {
     return (
+      // Title and amount of the slider
       <Stack my={1.4}>
-        <Stack gap={1}>
-            <Typography variant="subtitle2">{label}</Typography>
+        <Stack direction="row" gap={2.5}>
+            <Typography variant="h5">{label}: </Typography>
             <Typography variant="h5">
                 {unit} {amount}
             </Typography>
@@ -35,11 +36,12 @@ const SliderComponent = ({
             step={steps}
         />
 
+        {/* Min and max label */}
         <Stack direction="row" justifyContent="space-between">
-        <Typography variant="caption" color="text.secondary">
+        <Typography variant="caption" color="blue">
             {unit} {min}
         </Typography>
-        <Typography variant="caption" color="text.secondary">
+        <Typography variant="caption" color="red">
             {unit} {max}
         </Typography>
         </Stack>

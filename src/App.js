@@ -4,7 +4,7 @@ import { Container } from "@mui/system";
 import Navbar from "./Components/Navbar";
 import Result from "./Components/Result";
 import SliderSelect from "./Components/SliderSelect";
-import RepaymentTime from "./Components/RepaymentSelect";
+
 
 function App() {
 
@@ -25,9 +25,6 @@ function App() {
 
         {/* Component to initialize the value of diferrents slides */}
         <SliderSelect data={data} setData={setData}/>
-
-        {/* Component to select the tenure of the loan. */}
-        <RepaymentTime data={data} setData={setData}/>
 
         </Grid>
         <Grid item xs={12} md={6}>

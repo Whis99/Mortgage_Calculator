@@ -11,7 +11,7 @@ const RepaymentTime = ({ data, setData }) => {
     };
   
     return (
-        <FormControl fullWidth>
+        <FormControl size = "medium">
             <InputLabel id="demo-simple-select-label">Repayment Time</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"

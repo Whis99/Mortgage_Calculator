@@ -21,7 +21,7 @@ Here's a demo of implemented user stories:
 
 ## Live demo
 
-[Mortgage calculator] (https://mortgage-calculator-whis99.vercel.app/)
+[Mortgage calculator](https://mortgage-calculator-whis99.vercel.app/)
 
 ## Open-source libraries used
 
